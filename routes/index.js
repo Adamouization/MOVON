@@ -16,14 +16,4 @@ router.get('/terms-privacy', function(req, res, next) {
     res.render('misc/terms-privacy', { title: 'Terms & Privacy' });
 });
 
-/* GET login page */
-router.get('/login', function(req, res, next) {
-    res.render('user/login', { title: 'Login' });
-});
-
-/* GET register page */
-router.get('/register', function(req, res, next) {
-    res.render('user/register', { title: 'Register' });
-});
-
 module.exports = router;

@@ -9,6 +9,8 @@ var hbs = require('express-handlebars');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var login = require('./routes/login');
+var register = require('./routes/register');
 
 var MongoClient = require('mongodb').MongoClient;   // retrieve data base
 var assert = require('assert');
@@ -52,6 +54,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/login', login);
+app.use('/register', register);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
