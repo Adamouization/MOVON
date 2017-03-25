@@ -14,7 +14,9 @@
 **/IntegrationServer/XAStore/
 **/IntegrationServer/packages/Wm*/
 
+# local files
 .idea/
 node_modules
 .env
 .DS_STORE
+images
