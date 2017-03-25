@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,11 +9,37 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+var MongoClient = require('mongodb').MongoClient;   // retrieve data base
+var assert = require('assert');
+
 var app = express();
+app.get('env');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// connect to DB
+MongoClient.connect(process.env.MONGODB_URI, function (err, db) {
+    assert.equal(null, err);
+    console.log("Connected to database.");
+    db.collection('notes').insertOne(
+        {
+            title: 'Hello MongoDB',
+            text: 'Hopefully this works!'
+        },
+        function (err, res) {
+            if (err) {
+                db.close;
+                return console.log(err);
+            }
+            // Success
+            db.close();
+        }
+    )
+    //db.close();
+})
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
