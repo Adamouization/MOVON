@@ -10,3 +10,18 @@ a {
   margin-bottom: 0;
 }
 
+.center-block {
+  display: table;
+  margin: 0 auto;
+}
+
+.form-signin {
+  max-width: 300px;
+}
+
+.vertical-center{
+  min-height: 90%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
