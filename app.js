@@ -24,7 +24,21 @@ app.set('view engine', 'jade');
 MongoClient.connect(process.env.MONGODB_URI, function (err, db) {
     assert.equal(null, err);
     console.log("Connected to database.");
-    db.close();
+    db.collection('notes').insertOne(
+        {
+            title: 'Hello MongoDB',
+            text: 'Hopefully this works!'
+        },
+        function (err, res) {
+            if (err) {
+                db.close;
+                return console.log(err);
+            }
+            // Success
+            db.close();
+        }
+    )
+    //db.close();
 })
 
 // uncomment after placing your favicon in /public
