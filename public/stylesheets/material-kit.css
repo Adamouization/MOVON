@@ -2193,10 +2193,10 @@ legend {
 }
 .navbar.navbar-primary .dropdown-menu li > a:hover, .navbar.navbar-primary .dropdown-menu li > a:focus {
   color: #FFFFFF;
-  background-color: #9c27b0;
+  background-color: #F44336;
 }
 .navbar.navbar-primary .dropdown-menu .active > a {
-  background-color: #9c27b0;
+  background-color: #F44336;
   color: #ffffff;
 }
 .navbar.navbar-primary .dropdown-menu .active > a:hover, .navbar.navbar-primary .dropdown-menu .active > a:focus {
@@ -2392,7 +2392,7 @@ legend {
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:active {
-  background-color: #9c27b0;
+  background-color: #F44336;
   color: #FFFFFF;
 }
 .dropdown-menu .divider {
