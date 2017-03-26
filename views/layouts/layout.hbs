@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/gallery-sports.css"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/sticky-footer.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/dropdown-menu.css"/>
 
     <!-- theme -->
     <link rel="stylesheet" type="text/css" href="/stylesheets/assets.css"/>
@@ -24,17 +25,19 @@
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="/images/logoMin.png">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <!--fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
           type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 
     <!-- CSS Files -->
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet"/>
     <link href="/stylesheets/material-kit.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/stylesheets/style.css"/>
 
@@ -50,50 +53,62 @@
 <body>
 <!------------------------------------------------------- HEADER ------------------------------------------------------->
 <nav class="navbar navbar-danger navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-                </button>
-                <a class="navbar-brand hidden-xs hidden-sm" href="/"><span class="icon icon-shield"
-                                                                               style="font-size:18px; color:#3498db;"></span></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/sports" class="smoothScroll"> Book</a></li>
-                    <li><a href="/team" class="smoothScroll"> Team</a></li>
-                    <li><a href="/contact" class="smoothScroll"> Contact</a></li>
-                    <li><a href="/register" class="smoothScroll"> Register</a></li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+            </button>
+            <a class="navbar-brand hidden-xs hidden-sm" href="/"><span class="icon icon-shield"
+                                                                       style="font-size:18px; color:#3498db;"></span></a>
         </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/sports" class="smoothScroll"> Booking</a></li>
+                <li><a href="/team" class="smoothScroll"> Team</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">ACCOUNT</button>
+                    <div class="dropdown-content">
+                        <a href="/">Login</a>
+                        <a href="/register">Register</a>
+                        <a href="/contact">Contact</a>
+                        <a href="/terms-privacy">Terms & Privacy</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <!------------------------------------------------------- CONTENT ------------------------------------------------------>
 {{{ body }}}
 <!------------------------------------------------------- FOOTER ------------------------------------------------------->
+<!--<p style="padding-left: 50px">-->
+    <!--MOVON &copy; 2017-->
+    <!--·-->
+    <!--<a href="/terms-privacy">Terms & Privacy</a>-->
+<!--</p>-->
 <!--<footer class="footer">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<p class="footer-links">-->
-                <!--<a href="/" style="color: #ffffff">Home</a>-->
-                <!--·-->
-                <!--<a href="/sports" style="color: #ffffff">Book</a>-->
-                <!--·-->
-                <!--<a href="/team" style="color: #ffffff">Team</a>-->
-                <!--·-->
-                <!--<a href="/contact" style="color: #ffffff">Contact</a>-->
-                <!--·-->
-                <!--<a href="/register" style="color: #ffffff">Register</a>-->
-            <!--</p>-->
-            <!--<br>-->
-            <!--<p style="color: #ffffff">-->
-                <!--MOVON &copy; 2017-->
-                <!--·-->
-                <!--<a href="/terms-privacy" style="color: #ffffff">Terms & Privacy</a>-->
-            <!--</p>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<p class="footer-links">-->
+<!--<a href="/" style="color: #ffffff">Home</a>-->
+<!--·-->
+<!--<a href="/sports" style="color: #ffffff">Book</a>-->
+<!--·-->
+<!--<a href="/team" style="color: #ffffff">Team</a>-->
+<!--·-->
+<!--<a href="/contact" style="color: #ffffff">Contact</a>-->
+<!--·-->
+<!--<a href="/register" style="color: #ffffff">Register</a>-->
+<!--</p>-->
+<!--<br>-->
+<!--<p style="color: #ffffff">-->
+<!--MOVON &copy; 2017-->
+<!--·-->
+<!--<a href="/terms-privacy" style="color: #ffffff">Terms & Privacy</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
 <!--</footer>-->
 </body>
 </html>
