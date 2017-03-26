@@ -11,6 +11,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var register = require('./routes/register');
+var booking = require('./routes/booking');
+
 
 var MongoClient = require('mongodb').MongoClient;   // retrieve data base
 var assert = require('assert');
@@ -56,6 +58,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
+app.use('/booking', booking);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
