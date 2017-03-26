@@ -13,6 +13,7 @@ var monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July'
 var object = {
     weekdays: []
 }
+
 var days = [];
 
 for(var i=0; i<5; i++){
@@ -20,12 +21,13 @@ for(var i=0; i<5; i++){
     day++;
     dayNumber++;
 }
-/* GET home page. */
+/* GET sport page. */
 router.get('/:sport', function(req, res) {
-    res.render('booking-basketball', { sport: req.params.sport});
+    res.render('booking/booking-basketball', { sport: req.params.sport});
 
 });
 
+/* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Launchpad!' });
 });

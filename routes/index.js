@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET sports gallery page. */
 router.get('/sports', function(req, res, next) {
-    res.render('sports', { title: 'Sports selection' });
+    res.render('booking/sports', { title: 'Sports selection' });
 });
 
 /* GET terms & privacy. */
@@ -28,7 +28,7 @@ router.get('/contact', function(req, res, next) {
 
 /* GET modal page. */
 router.get('/modal', function(req, res, next) {
-    res.render('modal', { title: 'Modal' });
+    res.render('misc/modal', { title: 'Modal' });
 });
 
 module.exports = router;
