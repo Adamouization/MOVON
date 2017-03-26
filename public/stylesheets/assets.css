@@ -94,10 +94,6 @@ body {
     color: white;
 }
 
-.modal-footer {
-    background: #2b2b2b;
-}
-
 .navbar-default {
     border-color: transparent;
     background-color: #dadada;
@@ -314,19 +310,6 @@ a:after {
     font-size: 60px;
     line-height: 30px;
     margin-bottom: 10px;
-}
-
-#footerwrap {
-    background: #2b2b2b;
-    margin-top: 0px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-#footerwrap h4 {
-    color: white;
 }
 
 /* ==========================================================================
