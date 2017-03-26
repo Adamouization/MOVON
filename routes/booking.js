@@ -21,24 +21,11 @@ for(var i=0; i<5; i++){
     dayNumber++;
 }
 /* GET home page. */
-router.get('/basketball', function(req, res) {
+router.get('/:sport', function(req, res) {
     res.render('booking-basketball', { sport: req.params.sport});
 
 });
 
-router.get('/football', function(req, res) {
-    res.render('booking-football', { sport: req.params.sport});
-
-});
-
-router.get('/tennis', function(req, res) {
-    res.render('booking-tennis', { sport: req.params.sport});
-});
-
-router.get('/badmington', function(req, res) {
-    res.render('booking-badmington', { sport: req.params.sport});
-
-});
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Launchpad!' });
 });

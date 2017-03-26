@@ -2965,6 +2965,7 @@ h2.title {
   padding-right: 24px;
   padding-bottom: 0;
   padding-left: 24px;
+  background: #f44336;
 }
 .modal-content .modal-body {
   padding-top: 24px;
@@ -3019,7 +3020,7 @@ h2.title {
   background-color: #eeeeee;
 }
 .panel.panel-inverse > .panel-heading {
-  background-color: #3f51b5;
+  background-color: #f44336;
 }
 .panel.panel-primary > .panel-heading {
   background-color: #9c27b0;
