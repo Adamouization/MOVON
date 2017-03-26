@@ -16,6 +16,30 @@
             <label for="exampleTextarea">Message</label>
             <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
         </div>
-        <button type="submit" class="btn btn-danger">Submit</button>
     </form>
+</div>
+
+<!-- Button trigger modal -->
+<div style="padding-left: 50px; padding-right: 50px;">
+<button class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+    Submit
+</button>
+
+<!-- Modal Core -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Submission Successfully</h4>
+            </div>
+            <div class="modal-body">
+                Your message has been sent successfully. You will be contacted via email within 48 hours. Thank for using our service!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info btn-simple">Save</button>
+            </div>
+        </div>
+    </div>
 </div>
