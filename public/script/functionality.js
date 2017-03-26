@@ -2,8 +2,8 @@
  * Created by Samu on 26/03/2017.
  */
 $(document).ready(function(){
-    $(".btn-xs").click(function () {
-
+    $("#reservation").click(function () {
+        $("#erase").addClass('hide');
     });
     $("#changeDate1").click(function () {
         $("#date").html('Monday 27th of March');
