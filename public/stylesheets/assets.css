@@ -248,7 +248,8 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-    background: url("../images/background.jpg") no-repeat center top;
+    background: url("../images/runningTracks.jpeg") no-repeat center top;
+
     margin-top: -50px;
     padding-top: 120px;
     text-align: center;
