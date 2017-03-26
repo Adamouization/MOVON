@@ -1,5 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
 }
 
 a {
@@ -8,5 +9,17 @@ a {
 
 .navbar{
   margin-bottom: 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin:2% 2%;
+  border-radius: 30px;
+}
+li{
+  font-size: 20px;
+  margin: 2% 0%;
+  border-radius: 30px;
 }
 
