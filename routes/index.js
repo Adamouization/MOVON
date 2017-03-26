@@ -26,4 +26,9 @@ router.get('/contact', function(req, res, next) {
     res.render('misc/contact', { title: 'Contact' });
 });
 
+/* GET modal page. */
+router.get('/modal', function(req, res, next) {
+    res.render('modal', { title: 'Modal' });
+});
+
 module.exports = router;
