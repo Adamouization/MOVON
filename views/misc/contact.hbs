@@ -1,10 +1,21 @@
-<form> action="contact.php" method="post">
-    Your name<br>
-    <input type="text" name="cf_name"><br>
-    Your e-mail<br>
-    <input type="text" name="cf_email"><br>
-    Message<br>
-    <textarea name="cf_message"><br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Clear">
-</form>
+<div style="padding-left: 50px; padding-right: 50px;">
+    <h3>Contact Us!</h3>
+    <form>
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="email" class="form-control" id="inputName"
+                   placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Message</label>
+            <textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+</div>
