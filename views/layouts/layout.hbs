@@ -16,8 +16,26 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/sticky-footer.css"/>
 
-    <!-- bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- theme -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/assets.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/icomoon.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate-custom.css"/>
+    <script type="text/javascript" src="/script/modernizr.js">
+
+        <!--
+        fonts -->
+        < link
+        href = 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic'
+        rel = 'stylesheet'
+        type = 'text/css' >
+                < link
+        href = 'http://fonts.googleapis.com/css?family=Raleway:400,300,700'
+        rel = 'stylesheet'
+        type = 'text/css' >
+
+                <!-- bootstrap -->
+                < script
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
     <!-- Latest compiled and minified CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
@@ -34,6 +52,27 @@
 <!-------------------------------------------------------- BODY -------------------------------------------------------->
 <body>
 <!------------------------------------------------------- HEADER ------------------------------------------------------->
+<div id="navbar-main" >
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+                </button>
+                <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield"
+                                                                               style="font-size:18px; color:#3498db;"></span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/sports" class="smoothScroll"> Book</a></li>
+                    <li><a href="/team" class="smoothScroll"> Team</a></li>
+                    <li><a href="/contact" class="smoothScroll"> Contact</a></li>
+                    <li><a href="/register" class="smoothScroll"> Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <!------------------------------------------------------- CONTENT ------------------------------------------------------>
 {{{ body }}}
 <!------------------------------------------------------- FOOTER ------------------------------------------------------->
@@ -45,9 +84,9 @@
                 ·
                 <a href="/sports" style="color: #ffffff">Book</a>
                 ·
-                <a href="/" style="color: #ffffff">Account</a>
+                <a href="/team" style="color: #ffffff">Team</a>
                 ·
-                <a href="/login" style="color: #ffffff">Login</a>
+                <a href="/contact" style="color: #ffffff">Contact</a>
                 ·
                 <a href="/register" style="color: #ffffff">Register</a>
             </p>
